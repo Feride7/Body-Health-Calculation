@@ -1,14 +1,16 @@
-function calculate() {
-    var kgChild = document.getElementById("kg");
-    var heightChild = document.getElementById("height");
+let btnChild = document.getElementById("childCalc");
+var btnChildNav=document.getElementById("btnChildNav");
+var formChid=document.getElementById("formChid")
+
+btnChild.addEventListener("click", function(e) {
+    var kgChild = document.getElementById("kg").value;
+    var heightChild = document.getElementById("height").value;
+    let textResult = document.getElementById("textResult");
 
     var kg = parseFloat(kgChild);
     var height = parseFloat(heightChild);
 
-    let textResult = document.getElementById("textResult");
     let result = parseFloat(kg / (height * height));
-
-
 
     if (result < 18.5) {
         textResult.innerHTML = Math.floor(result) + " you are so weak"
@@ -23,8 +25,6 @@ function calculate() {
     } else {
         textResult.innerHTML = Math.floor(result) + " please enter a valid value";
     }
+    e.preventDefault()
 
-}
-calculate()
-let btnChild = document.getElementById("childCalc")
-btnChild.addEventListener("click", calculate)
+})
