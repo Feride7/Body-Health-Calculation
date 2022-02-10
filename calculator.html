@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="calculate.css">
+    <title>Hesaplamalar</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav></nav>
+        <header>
+            <img src="img/BKI-1.png" alt="" />
+            <table>
+                <tr>
+                    <td><a href="">CHILD MASS INDEX</a></td>
+                    <td><a href="">ADULT MASS INDEX</a></td>
+                    <td><a href="">RISK DETECTION AROUND THE WAIST</a></td>
+                    <td><a href="">CALCULATE THE CALORIES OF BODY MOVEMENTS</a></td>
+                </tr>
+            </table>
+        </header>
+        <section>
+
+            <form id="child">
+                <div>
+                    <label for="gender">Gender&nbsp</label>
+                    <select id="gender" class="box1">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+                </div>
+                <div>
+                    <label for="birth">Date of Birth &nbsp</label>
+                    <select id="date" class="box2">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option></select
+            >&nbsp &nbsp
+
+            <select id="birth">
+              <option>2022</option>
+              <option>2021</option>
+              <option>2020</option>
+              <option>2019</option>
+              <option>2018</option>
+              <option>2017</option>
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <option>2002</option>
+              <option>2001</option>
+              <option>2000</option>
+            </select>
+                </div>
+                <div>
+                    <label for="kg">Weight (kg) &nbsp;</label>
+                    <input type="text" id="kg" class="box"> E.g:50
+                </div>
+                <div>
+                    <label for="height">Height (cm) &nbsp;</label>
+                    <input type="text" id="height" class="box"> E.g:170
+                </div>
+                <button>Calculate</button>
+                <hr>
+                <p id="textResult"></p>
+            </form>
+
+            <form id="adult">
+                <div>
+                    <label for="kg">Weight (kg) &nbsp;</label>
+                    <input type="number" id="kg" class="box"> E.g:50
+                </div>
+                <div>
+                    <label for="height">Height (cm) &nbsp;</label>
+                    <input type="" id="height" class="box"> E.g:1.70
+                </div>
+                <button id="childCalc">Calculate</button>
+                <hr>
+            </form>
+
+            <form id="waist-form">
+                <div>
+                    <label for="waist">Waist Circumference </label>
+                    <input type="text" id="waist" class="box3"> E.g:90
+                </div>
+                <div>
+                    <label for="gender">Gender&nbsp</label>
+                    <select id="gender" class="box1">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+                </div>
+                <button>Calculate</button>
+                <hr>
+
+            </form>
+
+        </section>
+    </div>
+    <footer>
+        Copyright © 2022
+    </footer>
+    <script src="calculate.js"></script>
+</body>
+
+</html>
