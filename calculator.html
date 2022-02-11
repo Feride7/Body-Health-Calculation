@@ -18,15 +18,14 @@
             <table>
                 <tr>
                     <td><a href="" id="btnChilNav">CHILD MASS INDEX</a></td>
-                    <td><a href="">ADULT MASS INDEX</a></td>
-                    <td><a href="">RISK DETECTION AROUND THE WAIST</a></td>
-                    <td><a href="">CALCULATE THE CALORIES OF BODY MOVEMENTS</a></td>
+                    <td><a href="" id="btnAdult">ADULT MASS INDEX</a></td>
+                    <td><a href="" id="btnWaist">RISK DETECTION AROUND THE WAIST</a></td>
                 </tr>
             </table>
         </header>
         <section>
 
-            <form id="child">
+            <form id="formChild">
                 <div>
                     <label for="gender">Gender&nbsp</label>
                     <select id="gender" class="box1">
@@ -87,23 +86,25 @@
                 </div>
                 <button id="childCalc" type="submit">Calculate</button>
                 <hr>
-                <p id="textResult"></p>
+                <p id="childResult"></p>
             </form>
 
-            <form id="adult">
+
+            <form id="formAdult">
                 <div>
-                    <label for="kg">Weight (kg) &nbsp;</label>
-                    <input type="number" id="kg" class="box"> E.g:50
+                    <label for="kgAdult">Weight (kg) &nbsp;</label>
+                    <input type="text" id="kgAdult" class="box"> E.g:50
                 </div>
                 <div>
-                    <label for="height">Height (cm) &nbsp;</label>
-                    <input type="" id="height" class="box"> E.g:1.70
+                    <label for="heightAdult">Height (cm) &nbsp;</label>
+                    <input type="text" id="heightAdult" class="box"> E.g:1.70
                 </div>
-                <button>Calculate</button>
+                <button id="adultCalc">Calculate</button>
                 <hr>
+                <p id="adultResult"></p>
             </form>
 
-            <form id="waist-form">
+            <form id="formWaist">
                 <div>
                     <label for="waist">Waist Circumference </label>
                     <input type="text" id="waist" class="box3"> E.g:90
@@ -111,13 +112,14 @@
                 <div>
                     <label for="gender">Gender&nbsp</label>
                     <select id="gender" class="box1">
-              <option>Male</option>
+             
               <option>Female</option>
+               <option>Male</option>
             </select>
                 </div>
-                <button>Calculate</button>
+                <button id="waistCalc">Calculate</button>
                 <hr>
-
+                <p id="waistResult"></p>
             </form>
 
         </section>

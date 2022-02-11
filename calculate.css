@@ -41,9 +41,16 @@ section {
     margin-right: 12rem;
 }
 
-#adult,
-#waist-form {
-    display: none;
+#formAdult,
+#formWaist {
+    visibility: hidden;
+    margin-left: 0px;
+    margin-top: -290px;
+    padding-top: 0;
+}
+
+#formWaist {
+    margin-top: -200px;
 }
 
 form {
