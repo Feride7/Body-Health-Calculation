@@ -35,27 +35,27 @@ var btnChild = document.getElementById("childCalc");
 var textResult = document.querySelector("#childResult");
 
 btnChild.addEventListener("click", function(e) {
-    var kgChild = document.getElementById("kg").value;
-    var heightChild = document.getElementById("height").value;
+    var kg = document.getElementById("kg").value;
+    var height = document.getElementById("height").value;
+    let textResult = document.getElementById("textResult");
 
-    var kg = parseFloat(kgChild);
-    var height = parseFloat(heightChild);
-
-    let result = parseFloat(kg / (height * height));
+    let result = kg / (height * height);
 
     if (result < 18.5) {
-        textResult.innerHTML = Math.floor(result) + " you are so weak"
+        textResult.innerHTML = ` Your result is: ${Math.floor(result)}. You are underweight`
     } else if (result > 18.5 && result < 24.9) {
-        textResult.innerHTML = Math.floor(result) + " your weight is normal"
+        textResult.innerHTML = ` Your result is: ${Math.floor(result)}. It is normal.`
     } else if (result > 25 && result < 29.9) {
-        textResult.innerHTML = Math.floor(result) + " you are overweight"
+        textResult.innerHTML = ` Your result is: ${Math.floor(result)}. You are overweight!`
     } else if (result > 30 && result < 39.9) {
         textResult.innerHTML = Math.floor(result) + "you are obese";
+        textResult.innerHTML = ` Your result is: ${Math.floor(result)}. You are obese!`
     } else if (result > 40) {
-        textResult.innerHTML = Math.floor(result) + " severely obese (morbidly obese)";
+        textResult.innerHTML = ` Your result is: ${Math.floor(result)}.  Morbidly obese`
     } else {
         textResult.innerHTML = Math.floor(result) + " please enter a valid value";
     }
+
     e.preventDefault()
 
 });
