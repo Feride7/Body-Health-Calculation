@@ -32,14 +32,14 @@ window.onclick = function(e) {
 };
 //Children BMI calculator
 var btnChild = document.getElementById("childCalc");
-var textResult = document.querySelector("#childResult");
-
 btnChild.addEventListener("click", function(e) {
-    var kg = document.getElementById("kg").value;
-    var height = document.getElementById("height").value;
-    let textResult = document.getElementById("textResult");
-
-    let result = kg / (height * height);
+    var kgChild = document.getElementById("kg").value;
+    var heightChild = document.getElementById("height").value;
+    let textResult = document.getElementById("childResult");
+    let kg = parseFloat(kgChild);
+    let height = parseFloat(heightChild);
+    let result = parseFloat(kg / (height * height));
+    console.log(result)
 
     if (result < 18.5) {
         textResult.innerHTML = ` Your result is: ${Math.floor(result)}. You are underweight`
@@ -57,6 +57,7 @@ btnChild.addEventListener("click", function(e) {
     }
 
     e.preventDefault()
+
 
 });
 //Adult BMI calculator
