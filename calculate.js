@@ -102,7 +102,7 @@ waistCalc.addEventListener("click", function() {
     let waist = document.getElementById("waist").value;
     let waistResult = document.getElementById("waistResult");
 
-    if (gender.selectedValue == "Female") {
+    if (gender.value == "Female") {
         if (waist <= 80) {
             waistResult.innerHTML = `Your waist thickness is ${waist}.
         It is normal for women`
