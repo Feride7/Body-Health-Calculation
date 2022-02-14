@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    letter-spacing: inherit;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.nav-top {
+    padding: 5px;
+    background: #222427;
+    padding-left: 25rem;
+    letter-spacing: 0.7px;
+}
+
+.input {
+    margin-right: 25rem;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links> a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 22px;
+    text-transform: capitalize;
+    font-size: 12px ;
+}
+
+.links> a:hover {
+    color: red;
+}
+
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+    margin-right: 25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav-links>a {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 14px;
+    color: black;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+}
+
+.header-bottom> img {
+    margin-left: 25rem;
+    margin-top: 20px;
+    height: 90px;
+}
+
+.container_table {
+    display: flex;
+    cursor: pointer;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.table {
+    width: 80%;
+}
+
+.b> td {
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+td>a {
+    text-decoration: none;
+    color: black;
+}
+
+ul> li {
+    font-size: 16px;
+    margin-bottom: 16px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.side-a {
+    width: 20%;
+}
+
+.side-a>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.side-a>li>a:hover {
+    text-decoration: underline;
+    
+}
+
+.fa-address-book {
+    color: rgb(226, 35, 226);
+    font-size: 25px;
+    padding-right: 10px;
+
+}
+
+.fa-cogs {
+    color: red;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.fa-calculator {
+    color: black;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.fa-coffee {
+    color: rgb(51, 109, 148);
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+
+.fa-clipboard {
+    color: rgb(98, 216, 157);
+    font-size: 25px;
+    padding-right: 10px;
+}
