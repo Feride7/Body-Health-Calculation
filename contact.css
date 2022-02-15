@@ -1,0 +1,55 @@
+body {
+    background-color: #E9ECEC;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#tableDiv {
+    margin-top: 100px;
+    display: fixed;
+    width: 60%;
+    margin-bottom: 0;
+}
+
+td {
+    border: 3px solid transparent;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+}
+
+header {
+    height: 100px;
+}
+
+#msgUsers {
+    padding: 13px;
+    background-color: rgb(177, 174, 174);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+#msgUsers:hover {
+    color: red;
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-shadow: 2px 12px rgba(37, 36, 36, 0.4);
+}
+
+button>a {
+    color: white;
+    text-decoration: none;
+}

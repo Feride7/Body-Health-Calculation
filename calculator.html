@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="calculate.css">
+    <link rel="stylesheet" href="calculate.css" />
     <title>Body Mass Index Calculator</title>
 </head>
 
@@ -19,12 +19,13 @@
                 <tr>
                     <td><a href="" id="btnChilNav">CHILD MASS INDEX</a></td>
                     <td><a href="" id="btnAdult">ADULT MASS INDEX</a></td>
-                    <td><a href="" id="btnWaist">RISK DETECTION AROUND THE WAIST</a></td>
+                    <td>
+                        <a href="" id="btnWaist">RISK DETECTION AROUND THE WAIST</a>
+                    </td>
                 </tr>
             </table>
         </header>
         <section>
-
             <form id="formChild">
                 <div>
                     <label for="gender">Gender&nbsp</label>
@@ -78,55 +79,50 @@
                 </div>
                 <div>
                     <label for="kg">Weight (kg) &nbsp;</label>
-                    <input type="text" id="kg" class="box"> E.g:50
+                    <input type="text" id="kg" class="box" /> E.g:50
                 </div>
                 <div>
                     <label for="height">Height (cm) &nbsp;</label>
-                    <input type="text" id="height" class="box"> E.g:1.70
+                    <input type="text" id="height" class="box" /> E.g:1.70
                 </div>
                 <button id="childCalc" type="submit">Calculate</button>
-                <hr>
+                <hr />
                 <p id="childResult"></p>
             </form>
-
 
             <form id="formAdult">
                 <div>
                     <label for="kgAdult">Weight (kg) &nbsp;</label>
-                    <input type="text" id="kgAdult" class="box"> E.g:50
+                    <input type="text" id="kgAdult" class="box" /> E.g:50
                 </div>
                 <div>
                     <label for="heightAdult">Height (cm) &nbsp;</label>
-                    <input type="text" id="heightAdult" class="box"> E.g:1.70
+                    <input type="text" id="heightAdult" class="box" /> E.g:1.70
                 </div>
                 <button id="adultCalc">Calculate</button>
-                <hr>
+                <hr />
                 <p id="adultResult"></p>
             </form>
 
             <form id="formWaist">
                 <div>
                     <label for="waist">Waist Circumference </label>
-                    <input type="text" id="waist" class="box3"> E.g:90
+                    <input type="text" id="waist" class="box3" /> E.g:90
                 </div>
                 <div>
-                    <label for="gender">Gender&nbsp</label>
-                    <select id="gender" class="box1">
-             
+                    <label for="cs">Gender&nbsp</label>
+                    <select id="cs" class="box1">
               <option>Female</option>
-               <option>Male</option>
+              <option>Male</option>
             </select>
                 </div>
                 <button id="waistCalc">Calculate</button>
-                <hr>
+                <hr />
                 <p id="waistResult"></p>
             </form>
-
         </section>
     </div>
-    <footer>
-        Copyright © 2022
-    </footer>
+    <footer>Copyright © 2022</footer>
     <script src="calculate.js"></script>
 </body>
 

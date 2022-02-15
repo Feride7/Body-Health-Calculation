@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        body {
+            margin: 5%;
+        }
+        
+        .form-group {
+            margin-bottom: 6px;
+        }
+        
+        label {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 7px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        
+        .form-control:focus {
+            border-color: blue;
+            outline: 0;
+        }
+        
+        .btn {
+            padding: 6px;
+            border-radius: 4px;
+            color: white;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+        }
+        
+        .btn:hover {
+            background-color: #0069d9;
+            border: 1px solid #0062cc;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #form2 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Suggestion and Complaint Form</h2>
+    <br>
+    <p>
+        <strong>THIS FORM CONTAINS REQUESTS REGARDING PROTECTIVE HEALTH SERVICES UNDER THE GENERAL DIRECTORATE OF PUBLIC HEALTH.</strong>
+        <br><br> "Lists for chronic diseases that will be considered on administrative leave during the Covid-19 epidemic process are prepared by the General Directorate of Health Services, and for detailed information, you can get information from the
+        General Directorate of Health Services - Patient Rights and Medical Social Services Department on the line 0 312 585 10 00 of the Ministry of Health Power Plant or send a petition. They must apply in writing to the said department head.
+        <br><br> Please fill out the form completely so that your feedback can be evaluated properly.
+    </p>
+
+    <div id="form2">
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="fullname">Fullname</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="fullname" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="mail">Mail</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="mail" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="country">Cities</label>
+            </div>
+            <div class="col-75">
+                <select name="country" class="form-control">
+            <option value="Türkiye">Ankara</option>
+            <option value="Almanya">İstanbul</option>
+            <option value="Italy">İzmir</option>
+            <option value="Russia">Antalya</option>
+          </select>
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="message">Feedback</label>
+            </div>
+            <div class="col-75">
+                <textarea name="message" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="submit" class="btn" style="margin-left: 25%" />
+    </div>
+</body>
+
+</html>

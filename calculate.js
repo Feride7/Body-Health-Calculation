@@ -32,6 +32,12 @@ window.onclick = function(e) {
 };
 //Children BMI calculator
 var btnChild = document.getElementById("childCalc");
+var birth = document.getElementById("birth").value;
+
+function yasHesapla(birth) {
+    return 2022 - birth;
+}
+console.log(2022 - birth.value)
 btnChild.addEventListener("click", function(e) {
     var kgChild = document.getElementById("kg").value;
     var heightChild = document.getElementById("height").value;
@@ -98,11 +104,13 @@ var formWaist = document.getElementById("formWaist");
 var waistCalc = document.getElementById("waistCalc");
 
 waistCalc.addEventListener("click", function() {
-    let gender = document.getElementById("gender");
+    let select = document.getElementById("cs");
+    var text = select.options[select.selectedIndex].text;
     let waist = document.getElementById("waist").value;
     let waistResult = document.getElementById("waistResult");
 
-    if (gender.value == "Female") {
+
+    if (text == "Female") {
         if (waist <= 80) {
             waistResult.innerHTML = `Your waist thickness is ${waist}.
         It is normal for women`
@@ -110,9 +118,7 @@ waistCalc.addEventListener("click", function() {
             waistResult.innerHTML = `Your waist thickness is ${waist}.
         Women's waist circumference should be less than 80 cm, you are in the risk group`
         }
-    }
-
-    if (gender.value == "Male") {
+    } else if (text == "Male") {
         if (waist <= 94) {
             waistResult.innerHTML = `Your waist thickness is ${waist}.
         It is normal for men`
