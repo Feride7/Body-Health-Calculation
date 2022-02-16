@@ -63,4 +63,8 @@ arrowRight.addEventListener("click", ()=>{
     slideRight();
 } )
 
+let interval = window.setInterval(function(){
+    slideRight()
+}, 3000);
+
 startSlider();
