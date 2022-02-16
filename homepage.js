@@ -63,8 +63,16 @@ arrowRight.addEventListener("click", ()=>{
     slideRight();
 } )
 
+
+// To make it autoplay every 4 seconds
+
 let interval = window.setInterval(function(){
     slideRight()
-}, 3000);
+
+    if(current === sliderImages.length) {
+        clearInterval(interval);
+    }
+    
+}, 4000);
 
 startSlider();
