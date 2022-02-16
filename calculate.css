@@ -4,12 +4,7 @@ body {
     background-color: rgb(233, 236, 236);
 }
 
-nav {
-    background-color: white;
-    height: 100px;
-}
-
-header,
+.container,
 table {
     align-items: center;
     margin: 60px auto;
@@ -24,6 +19,7 @@ table {
 
 a {
     text-decoration: none;
+    list-style-type: none;
     padding: 30px;
     margin-top: 20px;
     font-size: 15px;
@@ -91,3 +87,110 @@ footer {
     margin-bottom: 0;
     margin-top: 20px;
 }
+
+
+/* navbar */
+
+
+
+
+.nav-top {
+    background: #222427;
+    padding-left: 25rem;
+    justify-content: space-evenly;
+  }
+  
+  .nav-top-ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  
+  .nav-top > input {
+    margin-right: 23rem;
+    text-transform: capitalize;
+    height: 30px;
+    align-items: center;
+  }
+  
+  .nav-top-ul > li > a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
+  
+  .hamburger {
+      display: none;
+  }
+  .hamburger:focus {
+    outline: none;
+  }
+  
+  .header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    margin-right: 23em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-left: 14px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav-links > li > a {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 14px;
+    color: black;
+  }
+
+  .nav-links > li > a:hover {
+    margin-left: 14px;
+    color: red;
+    text-decoration: underline;
+  
+  }
+  
+  .header-bottom > img {
+    margin-left: 23em;
+    margin-top: 20px;
+    height: 90px;
+  }
+
+  @media screen and (max-width: 1300px) {
+
+    .header-bottom > img {
+      margin-left: 10rem;
+      margin-top: 20px;
+      height: 90px;
+    }
+    .nav-top > input {
+      padding: 2px;
+      text-transform: capitalize;
+      height: 30px;
+      margin-top: 140px;
+    }
+  
+    .nav-top-ul {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      margin-right: 10rem;
+    }
+  
+    .hamburger {
+        display: flex;
+        padding-right: 10rem;
+    }
+  }
+  
+  
