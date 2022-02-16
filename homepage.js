@@ -1,78 +1,72 @@
-
 // Hamburger bar
 const hamburger = document.getElementById("hamburger");
 const navUL = document.querySelector(".nav-top-ul");
 
 hamburger.addEventListener("click", () => {
-    navUL.classList.toggle("show")
-})
+  navUL.classList.toggle("show");
+});
 
+// Slider
 
-// Slider 
-
-const sliderImages = document.querySelectorAll(".slide")
-const arrowRight = document.getElementById("arrow-right")
-const arrowLeft = document.getElementById("arrow-left")
+const sliderImages = document.querySelectorAll(".slide");
+const arrowRight = document.getElementById("arrow-right");
+const arrowLeft = document.getElementById("arrow-left");
 current = 0;
-
 
 // To clear all images
 function reset() {
-    for(let i = 0; i < sliderImages.length; i++){
-        sliderImages[i].style.display = "none";
-    }
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
 }
-
 
 //init Slider
 function startSlider() {
-    reset();
-    sliderImages[0].style.display="block"
+  reset();
+  sliderImages[0].style.display = "block";
 }
 
 // Showing prev
 
 function slideLeft() {
-    reset();
-    sliderImages[current-1].style.display = "block";
-    current--;
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
 }
 
 // Slide right
-function slideRight(){
-    reset();
-    sliderImages[current + 1].style.display = "block";
-    current++
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
 }
 
 // Left Arrow Click
 
-arrowLeft.addEventListener("click", ()=>{
-    if(current === 0){
-        current = sliderImages.length;
-    }
-    slideLeft();
-} )
+arrowLeft.addEventListener("click", () => {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
 
 // Right Arrow Click
 
-arrowRight.addEventListener("click", ()=>{
-    if(current === sliderImages.length-1){
-        current = -1;
-    }
-    slideRight();
-} )
-
+arrowRight.addEventListener("click", () => {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
 
 // To make it autoplay every 4 seconds
 
-let interval = window.setInterval(function(){
-    slideRight()
+let interval = window.setInterval(function () {
+  slideRight();
 
-    if(current === sliderImages.length) {
-        clearInterval(interval);
-    }
-    
+  if (current === sliderImages.length) {
+    clearInterval(interval);
+  }
 }, 4000);
 
 startSlider();
