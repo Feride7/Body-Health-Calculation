@@ -62,11 +62,12 @@ a:hover {
   text-align: center;
 }
  
-img:hover {
+.image:hover {
   box-shadow: 0 0 2px 1px rgba(50, 51, 51, 0.5);
   transform: scale(1.2);
+  
 }
-img {
+.image {
   border: 5px solid rgb(252, 240, 240);
   
 }
@@ -84,10 +85,12 @@ img {
 .nav-top-ul {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .nav-top-ul > li> a:hover {
-  color: red;
+  color: red; 
+  
 
 }
 
@@ -123,6 +126,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .nav-links {
   display: flex;
@@ -138,11 +142,11 @@ img {
   text-decoration: none;
   padding-left: 14px;
   color: black;
+  
 }
 
 .nav-links > li > a:hover {
   list-style-type: none;
-  text-decoration: underline;
   padding-left: 14px;
   color: red;
 }
