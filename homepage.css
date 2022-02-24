@@ -150,7 +150,7 @@ body {
 
 .td1 {
   transition: all 0.4s;
-  background-color: lightcoral;
+  background-color: rgb(252, 239, 239);
   border-radius: 20px;
 
 }
